@@ -1,0 +1,82 @@
+<html>
+<head>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+    <h1>Twitch Ad Compromiser</h1>
+    <div class="row update centered hidden">
+    	<div>An update is available:<br><a href="https://github.com/LasTechLabs/ttv-ad-compromiser">download from github</a></div>
+    </div>
+    <div class="row">
+    	<div style="font-weight: bold; font-size: 16px; padding-left: 8px">Options:</div>
+    </div>
+    <div class="row pad-left">
+        <div><input type="checkbox" id="mute_all_ads"></div>
+        <div>Mute Ads</div>
+        <img id="volImg" class="hidden" width="15" style="padding-left: 5px;">
+    </div>
+    <div class="row centered">
+    	<div>--------------------------------</div>
+    </div>
+    <div class="row centered">
+    	<div>v.1.0 - Made by <a href="https://twitter.com/lastechlabs"><img id="twImg" style="position: relative; bottom:-6px;" src="./Assets/Twitter_Logo_Blue.svg" width="22px">@LasTechLabs</a></div>
+    </div>
+</body>
+
+<style>
+	body {
+	    width: 250px;
+	    margin: 0px;
+	    padding: 0px;
+	}
+
+	h1 {
+	    text-align: center;
+	    font-size: 20px;
+	    background-color: lightgray;
+	    margin-bottom: 3px;
+	}
+
+	.row {
+	    font-size: 14px;
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	}
+	.centered{
+		justify-content: center;
+	}
+	.pad-left{
+		padding-left: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.row.update{
+		background-color: orange;
+		margin-top:-3px;
+		font-weight:bold;
+	}
+	.hidden{
+		display:none;
+	}
+
+	/* Chrome, Safari, Edge, Opera */
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	    -webkit-appearance: none;
+	    margin: 0;
+	    outline: none;
+	    border: none;
+	}
+
+	/* Firefox */
+	input[type=number] {
+		width: 30px;
+	    -moz-appearance: textfield;
+	    outline:none;
+	    border: none;
+	    border-bottom: 1px solid black;
+	}
+</style>
+</html>
