@@ -6,6 +6,7 @@
   "content_scripts": [
     {
       "matches": ["https://*.twitch.tv/*", "https://twitch.tv/*"],
+			"exclude_matches": ["https://clips.twitch.tv/*"],
       "js": ["content.js"]
     }
   ],
